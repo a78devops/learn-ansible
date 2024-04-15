@@ -11,3 +11,10 @@
         msg: url_task - {{ url_task }}
       vars:
         url_task: tasks.example.com
+
+  roles:
+    - demo
+
+
+# play level variable can be accessed by all the tasks & roles
+# task level variable can be accessed only by that task
