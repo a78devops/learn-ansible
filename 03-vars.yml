@@ -6,3 +6,8 @@
     - name: print variable
       ansible.builtin.debug:
         msg: url_play - {{ url_play }}
+    - name: task variable
+      ansible.builtin.debug:
+        msg: url_task - {{ url_task }}
+      vars:
+        url_task: tasks.example.com
