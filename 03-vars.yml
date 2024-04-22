@@ -17,10 +17,10 @@
       ansible.builtin.shell: uptime
       register: output
 
-   # retrive the output variable
-    - name: print output of previous task
+   # retrive the output variable using json query
+    - name: print output of previous task with only output of shell command
       ansible.builtin.debug:
-        msg: "{{ output }}"
+        msg: "{{ output.stdout }}"
 
 
   roles:
